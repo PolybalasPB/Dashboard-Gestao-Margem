@@ -1,0 +1,78 @@
+.center-div-menu-poly {
+    height: 60vh;
+    width: 40vw;
+    background-color: rgba(255, 255, 255, 0.144); /* Fundo semitransparente */
+    backdrop-filter: blur(25px); /* Efeito de desfoque */
+    -webkit-backdrop-filter: blur(10px); /* Para suporte em navegadores antigos */
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.adapt {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15%;
+    margin: 0;
+}
+
+.menu-options {
+    padding:60px;
+    width: 50px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    
+}
+  
+  
+.menu-options:hover {
+    box-shadow: 0 0 20px 10px #33cccc18; /* Efeito de luz ao redor */
+}
+
+.menu-opt {
+    text-decoration: none;
+}
+
+.menu-opt p{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+.compras {
+    background-image: url('../public/images/indicadoresPoly-images/compras.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+  
+.financeiro {
+    background-image: url('../public/images/indicadoresPoly-images/financeiro.png');;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+  
+.comercial {
+    background-image: url('../public/images/indicadoresPoly-images/comercial.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+  
+.logistica {
+    background-image: url('../public/images/indicadoresPoly-images/logistica.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}

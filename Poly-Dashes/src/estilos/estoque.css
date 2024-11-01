@@ -1,0 +1,72 @@
+.Dashboard-estoque {
+    height: 10000vh;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    
+}
+
+nav {
+    height: 100vh;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    border-right: 2px solid black;
+}
+
+div.pastas-box {
+    height: 35vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.pastas-title {
+    border: 2px solid var(--azul);
+    padding: 5px;
+    margin-right: 30px;
+    width: 90%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.arrow {
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+}
+.rotate {
+    transform: rotate(90deg);
+}
+
+.pastas {
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.3s ease; /* Transição para deslizamento */
+    opacity: 0;
+    height: 40vh;
+    width: 20vw;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+.menu-pasta {
+    font-size: 1.2rem;
+    margin-left: 30px;
+    font-weight: 600;
+}
+  
+  /* Torna as pastas visíveis quando a classe 'visible' está ativa */
+  .pastas.visible {
+    max-height: 300px; /* Define a altura máxima quando visível */
+    opacity: 1;
+  }
