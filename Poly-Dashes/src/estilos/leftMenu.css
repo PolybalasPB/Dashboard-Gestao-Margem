@@ -1,0 +1,175 @@
+/* CSS do botão e menu Hamburguer */
+
+.menu-content {
+    height: 100vh;
+    width: 20vw;
+    
+}
+
+nav {
+    width: 100%;
+    height: 6em;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.5em;
+}
+
+.burger-menu {
+    height: 100%;
+    width: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    
+}
+
+.burger-bar {
+    width: 3em;
+    height: 0.5em;
+    background-color: rgb(0, 183, 255);
+    border-radius: 0.5em;
+}
+
+.menu {
+    top: 12vh;
+    width: 20vw;
+    height: 90vh;
+    border-top-right-radius: 30px;
+    border: 2px solid rgb(0, 183, 255);;
+    position: absolute;
+    z-index: 0;
+    left: -20vw; /* Inicialmente oculto à esquerda */
+    transition: left 0.5s ease; /* Transição suave */
+    
+}
+
+/* ------------- sliding menu ------------------ */
+.hidden {
+    left: -20vw; /* Escondido à esquerda */
+}
+
+.visible {
+    left: 0; /* Visível na posição inicial */
+}
+
+/* ----- animations--------- */
+/* clicked */
+.burger-bar.clicked:nth-child(1){
+    transform: rotate(45deg) translate(0.75em, 1.25em);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(2){
+    transform: scale(0.1);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(3){
+    transform: rotate(135deg) translate(-0.5em, 1em);
+    transition: ease-out 0.5s;
+}
+
+/* unclicked */
+.burger-bar.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+
+/* CSS do menu das pastas: */
+
+.pastas-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.pastas-select-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2379BE;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.arrow {
+    font-size: 24px;
+    transition: transform 0.3s ease; /* Transição para a rotação */
+    cursor: pointer;
+  }
+  
+  .rotate {
+    transform: rotate(90deg); /* Rotaciona a seta 90 graus */
+}
+
+/* Estilo das pastas */
+.pastas {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    display: none; /* Inicialmente oculto */
+}
+
+.pastas.visible {
+    display: block; /* Exibe o menu de pastas */
+    max-height: 300px; /* Define a altura máxima quando visível */
+    opacity: 1;
+}
+
+.menu-pasta {
+    width: 100%;
+    padding: 10px;
+    transition: all .3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-pasta input {
+    margin-right: 1vw;
+}
+
+.menu-pasta:hover {
+    background-color: #32CBCB;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* CSS DA SEÇÃO DE FORNECEDORES */
+
+/* CSS da seção de fornecedores sobrepondo */
+.fornec-nav {
+    width: 100%;
+    position: absolute; /* Posiciona sobre a div de pastas */
+    top: 10vh; /* Alinha ao topo do container */
+    transition: transform 0.5s ease;
+    z-index: 1;
+}
+
+.fornec-nav.moved {
+    transform: translateY(300px); /* Move para baixo ao abrir o menu de pastas */
+}
+
+
+.fornec-select-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #2379BE;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1rem;
+    position: relative;
+    z-index: 9999;
+
+}

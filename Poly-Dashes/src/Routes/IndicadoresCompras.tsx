@@ -12,10 +12,10 @@ const IndicadoresCompras = () => {
           <div className='menu-options estoque'></div>
           <p>Estoque</p>
         </Link> 
-        <div className='menu-opt'>
+        <Link to='/margem' className='menu-opt'>
           <div className='menu-options margem'></div>
           <p>Margem</p>
-        </div>
+        </Link>
         <div className='menu-opt'>
           <div className='menu-options cc'></div>
           <p>C/C por Fornecedor</p>
