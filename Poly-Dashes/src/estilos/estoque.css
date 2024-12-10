@@ -2,6 +2,117 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    background-color: #fff;
-    margin-top: -20vh;
+    /*background-color: #fff;*/
+    background-image: url('https://business.ebanx.com/hubfs/site-business/assets/images/pages/website/beyond/dashboard/hero/shape-background.svg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.dash-estoque {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.fornecedor-estoque-box {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transform: translateX(12vw);
+    
+}
+
+.fornecedor-estoque-selected {
+    height: 15vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #DF2030;
+    cursor: pointer;
+    border-left: none;
+    border-right: none;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.fornecedor-estoque-selected h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #c9c9c9a6 0%, #DF2030 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.fornecedor-estoque-giro {
+    transform: translateY(10vh);
+    height: 10vh;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #DF2030;
+}
+.fornecedor-estoque-giro {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #DF2030;
+    cursor: pointer;
+}
+
+.produtos-section-estoque {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.produtos-section-estoque h4 {
+    color: #DF2030;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #DF2030;
+}
+
+.top-itens {
+    height: 70%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.top-itens p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #999;
+}
+
+.dados-fornecedor {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    transform: translateY(10vh);
+    transition: all 2s ease-in-out;
+}
+
+.dados-fornecedor p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #cacaca;
+    border-bottom: 2px solid #DF2030;
 }

@@ -9,6 +9,7 @@ import IndicadoresPoly from './Routes/IndicadoresPoly.tsx'
 import ErrorPage from './Routes/ErrorPage.tsx'
 import Estoque from './Routes/Estoque.tsx'
 import Margem from './Routes/Margem.tsx'
+import Contas from './Routes/Contas.tsx'
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: '/margem',
         element: <Margem />,
+      },
+      {
+        path: '/contas',
+        element: <Contas />,
       }
     ]
   } 

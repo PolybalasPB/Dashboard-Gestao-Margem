@@ -1,0 +1,55 @@
+.contas {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateX(13vw);
+}
+
+.contas > :first-child {
+    max-width: 30vw;
+}
+
+.fornec-conta {
+    height: 90vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.pagar > p {
+    color: #fff;
+}
+.receber > p {
+    color: #fff;
+}
+
+.pagar {
+    height: 15vh;
+    width: 30vw;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgb(2, 204, 2);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.receber {
+    height: 15vh;
+    width: 30vw;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #DF2030;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+

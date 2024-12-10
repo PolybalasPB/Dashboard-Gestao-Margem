@@ -7,7 +7,7 @@ function App() {
   return (
     <div className='main-content'>
       <div className='poly-logo'></div>
-      <Outlet />
+      <Outlet/>
     </div>
   )
 }
